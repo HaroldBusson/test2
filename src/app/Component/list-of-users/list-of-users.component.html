@@ -1,0 +1,10 @@
+
+
+<p>list-of-users works!</p>
+@if (users.length > 0) {
+@for (user of users; track user.name) {
+<ul> M ou Mme{{ user.name }} a {{ user.age }} ans
+  </ul>}
+} @else {
+<p> Nobody inside </p>
+}
